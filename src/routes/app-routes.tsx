@@ -16,13 +16,8 @@ const Salads = lazy(() => import('../pages/menu/foods/salads'));
 const Sandwiches = lazy(() => import('../pages/menu/foods/sandwiches'));
 const Desserts = lazy(() => import('../pages/menu/foods/desserts'));
 const Drinks = lazy(() => import('../pages/menu/drinks/drinks'));
-const Coffees = lazy(() => import('../pages/menu/drinks/coffees'));
-const Waters = lazy(() => import('../pages/menu/drinks/waters'));
-const Wines = lazy(() => import('../pages/menu/drinks/wines'));
-const Beers = lazy(() => import('../pages/menu/drinks/beers'));
-const Juices = lazy(() => import('../pages/menu/drinks/juices'));
+const AllDrinks = lazy(() => import('../pages/menu/drinks/all-drinks'));
 const Cocktails = lazy(() => import('../pages/menu/drinks/cocktails'));
-const Alcohol = lazy(() => import('../pages/menu/drinks/alcohol'));
 
 const routeFallback = (
   <div className='route-fallback' role='status' aria-live='polite'>
@@ -47,13 +42,8 @@ export const AppRoutes = () => (
       <Route path='/foods/sandwiches' element={<Sandwiches />} />
       <Route path='/foods/deserts' element={<Desserts />} />
       <Route path='/drinks' element={<Drinks />} />
-      <Route path='/drinks/coffees' element={<Coffees />} />
-      <Route path='/drinks/waters' element={<Waters />} />
-      <Route path='/drinks/wines' element={<Wines />} />
-      <Route path='/drinks/beers' element={<Beers />} />
-      <Route path='/drinks/juices' element={<Juices />} />
+      <Route path='/drinks/all' element={<AllDrinks />} />
       <Route path='/drinks/coctails' element={<Cocktails />} />
-      <Route path='/drinks/alcohol' element={<Alcohol />} />
     </Routes>
   </Suspense>
 );

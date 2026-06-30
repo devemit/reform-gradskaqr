@@ -56,6 +56,26 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
         en: 'Food',
         el: 'Φαγητό',
       },
+      'menu.beach_offer': {
+        mk: 'Понуда за плажа',
+        en: 'Beach offer',
+        el: 'Προσφορά παραλίας',
+      },
+      'menu.sunbed_umbrella': {
+        mk: 'Лежалка + чадор',
+        en: 'Sunbed + umbrella',
+        el: 'Ξαπλώστρα + ομπρέλα',
+      },
+      'menu.sunbed_umbrella_offer_prefix': {
+        mk: 'Со платени',
+        en: 'For',
+        el: 'Με',
+      },
+      'menu.sunbed_umbrella_offer_suffix': {
+        mk: 'добивате кафе + вода, пиво или сок по избор.',
+        en: 'you get coffee + water, beer, or any juice.',
+        el: 'παίρνετε καφέ + νερό, μπύρα ή χυμό της επιλογής σας.',
+      },
 
       // Capacity section
       'capacity.title': {
@@ -132,25 +152,10 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
       },
 
       // Drink categories
-      'drink.coffee': {
-        mk: 'Кафе',
-        en: 'Coffee',
-        el: 'Καφές',
-      },
-      'drink.water': {
-        mk: 'Вода',
-        en: 'Water',
-        el: 'Νερό',
-      },
-      'drink.juices': {
-        mk: 'Сокови',
-        en: 'Juices',
-        el: 'Χυμοί',
-      },
-      'drink.beer': {
-        mk: 'Пиво',
-        en: 'Beer',
-        el: 'Μπύρα',
+      'drink.all_drinks': {
+        mk: 'Сите пиjалоци',
+        en: 'All drinks',
+        el: 'Όλα τα ποτά',
       },
       'drink.cocktails': {
         mk: 'Коктели',
@@ -176,16 +181,6 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
         mk: 'Безалкохолни',
         en: 'Non-alcohol',
         el: 'Χωρίς αλκοόλ',
-      },
-      'drink.wine': {
-        mk: 'Вино',
-        en: 'Wine',
-        el: 'Κρασί',
-      },
-      'drink.alcohol': {
-        mk: 'Жестoки пијалоци',
-        en: 'Spirits',
-        el: 'Αλκοολούχα ποτά',
       },
 
       // Language switcher
@@ -322,193 +317,6 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
         el: 'Ατμόσφαιρα εκδηλώσεων στο Reform',
       },
 
-      // Alcohol products
-      'alcohol.vigor': {
-        mk: 'Вигор',
-        en: 'Vigor',
-        el: 'Βίγκορ',
-      },
-      'alcohol.smirnoff': {
-        mk: 'Смирноф',
-        en: 'Smirnoff',
-        el: 'Σμίρνοφ',
-      },
-      'alcohol.absolut': {
-        mk: 'Абсолут',
-        en: 'Absolut',
-        el: 'Αμπσόλουτ',
-      },
-      'alcohol.gin_sax': {
-        mk: 'Џин Сах',
-        en: 'Gin Sax',
-        el: 'Τζιν Σαξ',
-      },
-      'alcohol.gordons': {
-        mk: 'Гордонс',
-        en: 'Gordons',
-        el: 'Γκόρντονς',
-      },
-      'alcohol.bacardi': {
-        mk: 'Бакарди',
-        en: 'Bacardi',
-        el: 'Μπακάρντι',
-      },
-      'alcohol.martini': {
-        mk: 'Мартини',
-        en: 'Martini',
-        el: 'Μαρτίνι',
-      },
-      'alcohol.tequila': {
-        mk: 'Текила',
-        en: 'Tequila',
-        el: 'Τεκίλα',
-      },
-      'alcohol.ouzo': {
-        mk: 'Узо',
-        en: 'Ouzo',
-        el: 'Ούζο',
-      },
-      'alcohol.mastika': {
-        mk: 'Мастика',
-        en: 'Mastika',
-        el: 'Μαστίχα',
-      },
-      'alcohol.archers': {
-        mk: 'Арчерс',
-        en: 'Archers',
-        el: 'Άρτσερς',
-      },
-      'alcohol.baileys': {
-        mk: 'Бејлис',
-        en: 'Baileys',
-        el: 'Μπέιλις',
-      },
-      'alcohol.rakija': {
-        mk: 'Ракија',
-        en: 'Rakija',
-        el: 'Ρακίγια',
-      },
-      'alcohol.cognac': {
-        mk: 'Коњак',
-        en: 'Cognac',
-        el: 'Κονιάκ',
-      },
-      'alcohol.vinjak': {
-        mk: 'Винјак',
-        en: 'Vinjak',
-        el: 'Βίνιακ',
-      },
-      'alcohol.stock': {
-        mk: 'Шток',
-        en: 'Stock',
-        el: 'Στοκ',
-      },
-      'alcohol.rum': {
-        mk: 'Рум',
-        en: 'Rum',
-        el: 'Ρουμ',
-      },
-      'alcohol.captain_morgan': {
-        mk: 'Кептан Морган',
-        en: 'Captain Morgan',
-        el: 'Κάπτεν Μόργκαν',
-      },
-      'alcohol.aperol': {
-        mk: 'Аперол',
-        en: 'Aperol',
-        el: 'Απερόλ',
-      },
-      'alcohol.campari': {
-        mk: 'Кампари',
-        en: 'Campari',
-        el: 'Καμπάρι',
-      },
-      'alcohol.malibu': {
-        mk: 'Малибу',
-        en: 'Malibu',
-        el: 'Μαλίμπου',
-      },
-      'alcohol.pelinkovac': {
-        mk: 'Пелинковац',
-        en: 'Pelinkovac',
-        el: 'Πελίνκοβατς',
-      },
-      'alcohol.jagermeister': {
-        mk: 'Јегермаестер',
-        en: 'Jagermeister',
-        el: 'Γιάγκερμάιστερ',
-      },
-      'alcohol.shaker': {
-        mk: 'Шејкер',
-        en: 'Shaker',
-        el: 'Σέικερ',
-      },
-      'alcohol.johnny_walker': {
-        mk: 'Џони вокер',
-        en: 'Johnny Walker',
-        el: 'Τζόνι Γουόκερ',
-      },
-      'alcohol.johnny_walker_black': {
-        mk: 'Џони вокер блек',
-        en: 'Johnny Walker Black',
-        el: 'Τζόνι Γουόκερ Μπλακ',
-      },
-      'alcohol.ballantines': {
-        mk: 'Балантајс',
-        en: "Ballantine's",
-        el: 'Μπαλαντάινς',
-      },
-      'alcohol.jack_daniels': {
-        mk: 'Џек Даниелс',
-        en: 'Jack Daniels',
-        el: 'Τζακ Ντάνιελς',
-      },
-      'alcohol.cutty_sark': {
-        mk: 'Кати Сарк',
-        en: 'Cutty Sark',
-        el: 'Κάτι Σαρκ',
-      },
-      'alcohol.chivas': {
-        mk: 'Чивас',
-        en: 'Chivas',
-        el: 'Τσίβας',
-      },
-      'alcohol.jameson': {
-        mk: 'Џејмисон',
-        en: 'Jameson',
-        el: 'Τζέιμσον',
-      },
-      'alcohol.jb': {
-        mk: 'ЏБ',
-        en: 'JB',
-        el: 'ΤζΜ',
-      },
-      'alcohol.famous_grouse': {
-        mk: 'Фејмос Грус',
-        en: 'Famous Grouse',
-        el: 'Φέιμος Γκράους',
-      },
-      'alcohol.finlandia': {
-        mk: 'Финландиа',
-        en: 'Finlandia',
-        el: 'Φινλανδία',
-      },
-      'alcohol.skyy_vodka': {
-        mk: 'Скај Водка',
-        en: 'Skyy Vodka',
-        el: 'Σκάι Βότκα',
-      },
-      'alcohol.grey_goose': {
-        mk: 'Грејгус',
-        en: 'Grey Goose',
-        el: 'Γκρέι Γκους',
-      },
-      'alcohol.bombay': {
-        mk: 'Бомбај',
-        en: 'Bombay',
-        el: 'Μπομπάι',
-      },
-
       // Menu headers
       'menu.product': {
         mk: 'Производ',
@@ -601,157 +409,6 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
         mk: 'Мекотели',
         en: 'Molluscs',
         el: 'Μαλάκια',
-      },
-
-      // Coffee products
-      'coffee.espresso': {
-        mk: 'Еспресо',
-        en: 'Espresso',
-        el: 'Εσπρέσο',
-      },
-      'coffee.macchiato': {
-        mk: 'Макијато',
-        en: 'Macchiato',
-        el: 'Μακιάτο',
-      },
-      'coffee.cappuccino': {
-        mk: 'Капучино',
-        en: 'Cappuccino',
-        el: 'Καπουτσίνο',
-      },
-      'coffee.cacao': {
-        mk: 'Какао',
-        en: 'Cacao',
-        el: 'Κακάο',
-      },
-      'coffee.decaf_cappuccino': {
-        mk: 'Декаф Капучино',
-        en: 'Decaf Cappuccino',
-        el: 'Καπουτσίνο χωρίς καφεΐνη',
-      },
-      'coffee.decaf_macchiato': {
-        mk: 'Декаф Макијато',
-        en: 'Decaf Macchiato',
-        el: 'Μακιάτο χωρίς καφεΐνη',
-      },
-      'coffee.decaf_espresso': {
-        mk: 'Декаф Еспресо',
-        en: 'Decaf Espresso',
-        el: 'Εσπρέσο χωρίς καφεΐνη',
-      },
-      'coffee.nescafe': {
-        mk: 'Нес Кафе',
-        en: 'Nescafe',
-        el: 'Νεσκαφέ',
-      },
-      'coffee.tea': {
-        mk: 'Чај',
-        en: 'Tea',
-        el: 'τσάι',
-      },
-      'coffee.irish_coffee': {
-        mk: 'Ирско Кафе',
-        en: 'Irish Coffee',
-        el: 'Ιρλανδικός καφές',
-      },
-      'coffee.ice_coffee': {
-        mk: 'Ајс Кафе',
-        en: 'Ice Coffee',
-        el: 'Παγωμένος καφές',
-      },
-      'coffee.freddo_espresso_double': {
-        mk: 'Фредо Еспресо Дупло',
-        en: 'Freddo Espresso Double',
-        el: 'Φρέσκο εσπρέσο διπλό',
-      },
-      'coffee.freddo_espresso_single': {
-        mk: 'Фредо Еспресо Сингл',
-        en: 'Freddo Espresso Single',
-        el: 'Φρέσκο εσπρέσο απλό',
-      },
-      'coffee.freddo_cappuccino': {
-        mk: 'Фредо Капучино',
-        en: 'Freddo Cappuccino',
-        el: 'Φρέσκο καπουτσίνο',
-      },
-      'coffee.latte': {
-        mk: 'Лате Кафе',
-        en: 'Latte Cafe',
-        el: 'Λάτε καφές',
-      },
-      'coffee.hot_chocolate': {
-        mk: 'Топло Чоколадо',
-        en: 'Hot Chocolate',
-        el: 'Ζεστή σοκολάτα',
-      },
-
-      // Beer products
-      'beer.skopsko': {
-        mk: 'Скопско',
-        en: 'Skopsko',
-        el: 'Σκόπσκο',
-      },
-      'beer.amstel': {
-        mk: 'Амстел',
-        en: 'Amstel',
-        el: 'Άμστελ',
-      },
-      'beer.heineken': {
-        mk: 'Хајнекен',
-        en: 'Heineken',
-        el: 'Χάινεκεν',
-      },
-      'beer.skopsko_smooth': {
-        mk: 'Скопско Смут',
-        en: 'Skopsko Smooth',
-        el: 'Σκόπσκο Σμουθ',
-      },
-      'beer.radler': {
-        mk: 'Радлер',
-        en: 'Radler',
-        el: 'Ράντλερ',
-      },
-      'beer.pint_small': {
-        mk: 'Точено мало',
-        en: 'Pint Small',
-        el: 'Μικρό μπύρα',
-      },
-      'beer.pint_big': {
-        mk: 'Точено големо',
-        en: 'Pint Big',
-        el: 'Μεγάλο μπύρα',
-      },
-
-      // Wine products
-      'wine.temjanika': {
-        mk: 'Темјаника',
-        en: 'Temjanika',
-        el: 'Τεμγιάνικα',
-      },
-      'wine.red_wine': {
-        mk: 'Тга за југ',
-        en: 'Red Wine',
-        el: 'Κόκκινο κρασί',
-      },
-      'wine.alexandria': {
-        mk: 'Александрија',
-        en: 'Alexandria',
-        el: 'Αλεξάνδρεια',
-      },
-      'wine.alexandria_couve': {
-        mk: 'Александрија куве',
-        en: 'Alexandria Couve',
-        el: 'Αλεξάνδρεια Κουβέ',
-      },
-      'wine.traminec': {
-        mk: 'Траминец',
-        en: 'Traminec',
-        el: 'Τραμινέκ',
-      },
-      'wine.rose': {
-        mk: 'Розе',
-        en: 'Rose',
-        el: 'Ροζέ',
       },
 
       // Cocktail type groups
@@ -919,93 +576,71 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
         el: 'Μπέργκερ κοτόπουλο',
       },
 
-      // Juice and soft drink products
-      'juice.coca_cola': {
-        mk: 'Кока Кола',
-        en: 'Coca Cola',
-        el: 'Κόκα Κόλα',
+      // All drinks products
+      'all_drinks.coffee': {
+        mk: 'Нес Кафе',
+        en: 'Coffee',
+        el: 'Καφές',
       },
-      'juice.fanta': {
-        mk: 'Фанта',
-        en: 'Fanta',
-        el: 'Φάντα',
+      'all_drinks.water_small': {
+        mk: 'Вода мала',
+        en: 'Water small',
+        el: 'Νερό μικρό',
       },
-      'juice.schweppes': {
-        mk: 'Швепс',
-        en: 'Schweppes',
-        el: 'Σβέπες',
+      'all_drinks.water_big': {
+        mk: 'Вода голема',
+        en: 'Water big',
+        el: 'Νερό μεγάλο',
       },
-      'juice.sprite': {
-        mk: 'Спрајт',
-        en: 'Sprite',
-        el: 'Σπράιτ',
+      'all_drinks.mineral_water_small': {
+        mk: 'Газирана вода мала',
+        en: 'Mineral Water small',
+        el: 'Μεταλλικό νερό μικρό',
       },
-      'juice.tonic': {
-        mk: 'Тоник',
-        en: 'Tonic',
-        el: 'Τόνικ',
-      },
-      'juice.juice': {
-        mk: 'Џус',
-        en: 'Juice',
-        el: 'Χυμός',
-      },
-      'juice.orange': {
-        mk: 'Џус портокал',
-        en: 'Orange Juice',
-        el: 'Χυμός πορτοκαλιού',
-      },
-      'juice.ice_tea': {
-        mk: 'Леден чај',
-        en: 'Ice Tea',
-        el: 'Παγωμένο τσάι',
-      },
-      'juice.cedevita': {
-        mk: 'Цедевита',
-        en: 'Cedevita',
-        el: 'Τσεντεβίτα',
-      },
-      'juice.fresh_orange': {
-        mk: 'Цеден Портокал',
-        en: 'Fresh Orange Juice',
-        el: 'Φρέσκο πορτοκαλάδα',
-      },
-      'juice.fresh_mix': {
-        mk: 'Цеден Микс',
-        en: 'Fresh Mix Juice',
-        el: 'Φρέσκο μικτός χυμός',
-      },
-      'juice.lemonade': {
-        mk: 'Лимонада',
-        en: 'Lemonade',
-        el: 'Λεμονάδα',
-      },
-      'juice.soda': {
-        mk: 'Сода',
-        en: 'Soda',
-        el: 'Σόδα',
-      },
-
-      // Water products
-      'water.rosa': {
-        mk: 'Роса',
-        en: 'Rosa',
-        el: 'Ρόζα',
-      },
-      'water.mineral_water': {
-        mk: 'Газирана вода',
-        en: 'Mineral Water',
-        el: 'Μεταλλικό νερό',
-      },
-      'water.dobra_voda': {
+      'all_drinks.dobra_voda': {
         mk: 'Добра Вода',
         en: 'Dobra Voda',
         el: 'Ντόμπρα Βόντα',
       },
-      'water.rosa_1l': {
-        mk: 'Rosa 0.7л',
-        en: 'Rosa 0.7l',
-        el: 'Ρόζα 0.7λ',
+      'all_drinks.cedevita': {
+        mk: 'Цедевита',
+        en: 'Cedevita',
+        el: 'Τσεντεβίτα',
+      },
+      'all_drinks.coca_cola': {
+        mk: 'Кока кола',
+        en: 'Coca Cola',
+        el: 'Κόκα Κόλα',
+      },
+      'all_drinks.fanta': {
+        mk: 'Фанта',
+        en: 'Fanta',
+        el: 'Φάντα',
+      },
+      'all_drinks.sprite': {
+        mk: 'Спрајт',
+        en: 'Sprite',
+        el: 'Σπράιτ',
+      },
+      'all_drinks.fresh_orange': {
+        mk: 'Цеден Портокал',
+        en: 'Fresh Orange Juice',
+        el: 'Φρέσκος χυμός πορτοκάλι',
+      },
+      'all_drinks.skopsko': {
+        mk: 'Скопско',
+        en: 'Skopsko',
+        el: 'Σκόπσκο',
+      },
+      'all_drinks.smooth': {
+        mk: 'Скопско Смут',
+        en: 'Smooth',
+        el: 'Σμουθ',
+      },
+      'all_drinks.heineken': {
+        mk: 'Хајнекен',
+        en: 'Heineken',
+        el: 'Χάινεκεν',
       },
 
       // Pasta products

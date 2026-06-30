@@ -189,3 +189,112 @@
   text-transform: uppercase;
   backdrop-filter: blur(8px);
 }
+
+.sunbed-promo-card {
+  display: flex;
+  aspect-ratio: 4 / 3;
+  min-height: 0;
+  padding: clamp(0.9rem, 3.5vw, 1.15rem);
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.55rem;
+  border-color: rgba(255, 255, 255, 0.5);
+  background: linear-gradient(150deg, #1f346b 0%, #267c93 52%, #fff3c4 100%);
+  box-shadow: 0 20px 48px rgba(31, 52, 107, 0.24), 0 8px 24px rgba(176, 133, 47, 0.2);
+  color: var(--white);
+}
+
+.sunbed-promo-card__badge {
+  width: fit-content;
+  padding: 0.26rem 0.55rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+  font-size: clamp(0.7rem, 2.2vw, 0.78rem);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.1;
+  text-transform: uppercase;
+  backdrop-filter: blur(8px);
+}
+
+.sunbed-promo-card__visual {
+  display: flex;
+  flex: 0.75;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.6rem, 2vw, 0.9rem);
+}
+
+.sunbed-promo-card__icon {
+  width: clamp(2.25rem, 7vw, 3.15rem);
+  height: clamp(2.25rem, 7vw, 3.15rem);
+  object-fit: contain;
+  filter: brightness(0) invert(1) drop-shadow(0 8px 16px rgba(9, 13, 20, 0.28));
+  transition: transform 0.22s ease;
+}
+
+.sunbed-promo-card__umbrella {
+  transform: translateY(-0.15rem) rotate(-4deg);
+}
+
+.sunbed-promo-card__sunbed {
+  transform: translateY(0.2rem) rotate(3deg);
+}
+
+.sunbed-promo-card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.42rem;
+  text-align: center;
+}
+
+.sunbed-promo-card__title {
+  max-width: 100%;
+  color: var(--white);
+  font-size: clamp(1rem, 3.4vw, 1.28rem);
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+  text-transform: uppercase;
+  text-shadow: 0 2px 12px rgba(9, 13, 20, 0.26);
+}
+
+.sunbed-promo-card__price {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 5.5rem;
+  padding: 0.32rem 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.94);
+  color: var(--blue);
+  font-size: clamp(1.6rem, 5.8vw, 2.25rem);
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 1;
+  box-shadow: 0 12px 28px rgba(9, 13, 20, 0.18);
+}
+
+.sunbed-promo-card__details {
+  max-width: 19rem;
+  color: rgba(255, 255, 255, 0.94);
+  font-size: clamp(0.72rem, 2.4vw, 0.9rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  text-shadow: 0 2px 10px rgba(9, 13, 20, 0.24);
+}
+
+@media (hover: hover) {
+  .sunbed-promo-card:hover .sunbed-promo-card__umbrella {
+    transform: translateY(-0.3rem) rotate(-7deg);
+  }
+
+  .sunbed-promo-card:hover .sunbed-promo-card__sunbed {
+    transform: translateY(0.05rem) rotate(5deg);
+  }
+}

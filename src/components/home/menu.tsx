@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { BsImages, BsShare } from 'react-icons/bs';
 import ImageComponent from './image-component';
 import { useLanguage } from '../../contexts/language-context';
+import { useMenuPrice } from '../../hooks/use-menu-price';
 import './menu.css';
 
 const MENU_URL = 'https://reformbeachbar.vercel.app';
@@ -18,6 +19,8 @@ const menuCards = [
 
 const Menu = () => {
   const { t } = useLanguage();
+  const { menuPrice } = useMenuPrice();
+  const sunbedPromoPrice = menuPrice(180, 3);
   const [shareFeedback, setShareFeedback] = useState(false);
 
   const copyLink = () => {
@@ -63,6 +66,34 @@ const Menu = () => {
         </div>
       </div>
       <div className='menu_container'>
+        <article
+          className='men sunbed-promo-card'
+          aria-label={`${t('menu.sunbed_umbrella')} ${sunbedPromoPrice}. ${t(
+            'menu.sunbed_umbrella_offer_prefix'
+          )} ${sunbedPromoPrice} ${t('menu.sunbed_umbrella_offer_suffix')}`}
+        >
+          <span className='sunbed-promo-card__badge'>{t('menu.beach_offer')}</span>
+          <div className='sunbed-promo-card__visual' aria-hidden='true'>
+            <img
+              className='sunbed-promo-card__icon sunbed-promo-card__umbrella'
+              src='/umbrellas.png'
+              alt=''
+            />
+            <img
+              className='sunbed-promo-card__icon sunbed-promo-card__sunbed'
+              src='/sunbeds.png'
+              alt=''
+            />
+          </div>
+          <div className='sunbed-promo-card__content'>
+            <span className='sunbed-promo-card__title'>{t('menu.sunbed_umbrella')}</span>
+            <span className='sunbed-promo-card__price'>{sunbedPromoPrice}</span>
+            <span className='sunbed-promo-card__details'>
+              {t('menu.sunbed_umbrella_offer_prefix')} {sunbedPromoPrice}{' '}
+              {t('menu.sunbed_umbrella_offer_suffix')}
+            </span>
+          </div>
+        </article>
         {menuCards.map(({ image, link, titleKey }) => (
           <NavLink className='men menu-card-link' key={link} to={link} aria-label={t(titleKey)}>
             <div className='blur-image'>
